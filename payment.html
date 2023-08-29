@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful - Farmiz</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.cdnfonts.com/css/cabinet-grotesk" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="fm-container-fluid">
+
+    <div class="fm-logo">
+        <img src="./assets/logo.png" height="auto" alt="image">
+    </div>
+
+    <div class="fm-container">
+        <!-- <div class="fm-img">
+            <img src="./assets/on-your-way.png" alt="image">
+        </div> -->
+
+        <div class="body">
+            <h4 class="title">Your funds deposit was successful</h4>
+
+            <p class="message">
+                Hi Rex,<br/><br/>
+                You just deposited $1,000 to your Farmiz wallet.<br/><br/>
+                Here’s your receipt:
+            </p>
+
+
+            <div class="fm-payment-items">
+
+                <div class="fm-payment-item">
+                    <p class="p-title">Amount</p>
+                    <p class="p-value">$1,000</p>
+                </div>
+
+                <div class="fm-payment-item">
+                    <p class="p-title">Transaction ID</p>
+                    <p class="p-value">FZ123</p>
+                </div>
+
+                <div class="fm-payment-item">
+                    <p class="p-title">Transaction Date</p>
+                    <p class="p-value">Sept 1, 2023 22:20</p>
+                </div>
+
+                <div class="fm-payment-item">
+                    <p class="p-title">Transaction Status</p>
+                    <p class="p-value v-btn">Successful</p>
+                </div>
+
+                <div class="fm-payment-item pmt-method">
+                    <p class="p-title">Payment method</p>
+                    <p class="p-value">MTN Mobile Money <br/>
+                        233 1234567890</p>
+                </div>
+
+            </div>
+
+            <!-- <p class="btn-action"><a href="#" class="action-btn">Confirm Email Address</a></p> -->
+
+            <!-- <div class="fm-items">
+                <div class="fm-item">
+                    <p><i class="fa-solid fa-circle-check"></i> Fund your wallet</p>
+                    <p><i class="fa-solid fa-circle-check"></i> View portfolio health</p>
+                </div>
+                <div class="fm-item">
+                    <p><i class="fa-solid fa-circle-check"></i> Explore & sponsor open windows</p>
+                    <p><i class="fa-solid fa-circle-check"></i> Withdraw matured sponsorships</p>
+                </div>
+            </div> -->
+
+            <p class="footer">
+                This email was intended for Rex.<br/>
+                Don’t want to get notifications like this? <a href="#" class="notify">Turn off these notifications.</a><br/><br/>
+                © Farmiz, 100 Smith Street, Melbourne VIC 3000.
+            </p>
+
+            <p class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: #F7F9FB;
+    }
+
+    .fm-logo{
+        width: 80%;
+        padding: 1.5rem 0;
+    }
+
+    .fm-container-fluid{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 3rem;
+    }
+
+    .fm-container{
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        padding: 2rem 0;
+    }
+
+    .fm-img img{
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .body{
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .fm-items{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fm-payment-items{
+        border: 1px solid #DDDFE2;
+        border-radius: 5px;
+        padding: 15px;
+    }
+
+    .fm-payment-item{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #DDDFE2;
+    }
+
+    .pmt-method{
+        border-bottom: none;
+    }
+
+
+    .p-title{
+        font-family: 'Cabinet Grotesk', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #6B7280;
+    }
+
+
+    .p-value{
+        font-family: 'Cabinet Grotesk', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #121212;
+    }
+
+    @media (max-width: 767.98px) {
+        .fm-items{
+        display: block;
+        }
+    }
+
+    /* .fm-item{
+        margin-right: 40px;
+    } */
+
+    .fm-item p{
+        font-family: 'Cabinet Grotesk', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: #212121;
+    }
+
+    .fm-item i{
+        font-size: 20px;
+        color: #66A50D;
+        margin-right: 5px;
+    }
+
+    .title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        font-family: 'Manrope', sans-serif;
+    }
+
+    .message, .footer{
+        font-family: 'Cabinet Grotesk', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 21px;
+        color: #969CA5;
+        margin: 25px 0;
+    }
+
+    .footer{
+        border-top: 1px solid #DDDFE2;
+        padding-top: 30px;
+    }
+
+    .social a{
+        color: #406312;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 24px;
+        padding: 10px 15px 10px 0;
+    }
+
+    .action-btn{
+        text-decoration: none;
+        background-color: #152108;
+        color: #BEF263;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 16px;
+        font-family: 'Cabinet Grotesk', sans-serif;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+
+    .btn-action{
+        font-family: 'Cabinet Grotesk', sans-serif;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .notify{
+        color: #406312;
+        text-decoration: none;
+        font-weight: 700;
+        font-family: 'Manrope', sans-serif;
+    }
+</style>
+</body>
+</html>
